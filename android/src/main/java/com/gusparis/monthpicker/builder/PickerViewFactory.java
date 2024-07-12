@@ -38,7 +38,7 @@ public class PickerViewFactory {
     final int contentViewStyle = uiMode == Configuration.UI_MODE_NIGHT_YES && props.autoTheme()
         ? DARK_VIEW : LIGHT_VIEW;
 
-    AlertDialog.Builder builder = new AlertDialog.Builder(rnMonthPickerDialog.getActivity(), dialogStyle);
+    AlertDialog.Builder builder = new AlertDialog.Builder(rnMonthPickerDialog.getActivity());
     LayoutInflater inflater = fragmentActivity.getLayoutInflater();
     View contentView = inflater.inflate(contentViewStyle, null);
 
